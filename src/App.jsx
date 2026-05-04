@@ -1,20 +1,16 @@
-// App.jsx
+import { useState } from "react";
+import LoginForm from "./components/LoginForm";
 
-import "./App.css";
-import Greeting from "./components/Greeting";
-import Counter from "./components/Counter";
 
-// Root component that combines everything
 function App() {
+  const [isLogin, setIsLogin] = useState(true);
+
   return (
-    <div className="app-container">
-      {/* Props example */}
-      <Greeting name="Eugene" />
+    <div>
+      <h1>Sign in</h1>
 
-      {/* State example */}
-      <Counter />
-    </div>
-  );
+
+      </div>
+      )
 }
-
 export default App;
