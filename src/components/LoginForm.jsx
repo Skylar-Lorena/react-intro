@@ -10,9 +10,10 @@ const LoginForm = () => {
         console.log("Login data;", {email, password});
         };
         return (
-        <form onSubmit={handleSubmit}>
+            
+        <form className="form-card" onSubmit={handleSubmit}>
             <h2>Login</h2>
-            <div>
+            <div className="container">
                 <label>Email</label>
                 <input 
                 type="email"
@@ -21,7 +22,7 @@ const LoginForm = () => {
                 placeholder="Enter email"
                 />
              </div>
-            <div>
+            <div className="container">
                 <label>Password</label>
                 <input
                 type="password"

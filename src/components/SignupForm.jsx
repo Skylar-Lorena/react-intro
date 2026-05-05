@@ -14,10 +14,10 @@ const SignupForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form-card" onSubmit={handleSubmit}>
       <h2>Signup</h2>
 
-      <div>
+      <div className="container">
         <label>Name</label>
         <input
           type="text"
@@ -27,7 +27,7 @@ const SignupForm = () => {
         />
       </div>
 
-      <div>
+      <div className="container">
         <label>Email</label>
         <input
           type="email"
@@ -37,7 +37,7 @@ const SignupForm = () => {
         />
       </div>
 
-      <div>
+      <div className="container">
         <label>Password</label>
         <input
           type="password"
