@@ -1,10 +1,10 @@
 // App.jsx
 
 import "./App.css";
-import Greeting from "./components/Greeting";
-import Counter from "./components/Counter";
 import Profile from "./components/Profile";
 import Toggle from "./components/Toggle";
+import Greeting from "./components/Greeting";
+import Counter from "./components/Counter";
 
 
 // Root component that combines everything
@@ -12,10 +12,8 @@ function App() {
   return (
     <div className="app-container">
       {/* Props example */}
-      <Greeting name="Eugene" />
-
-      {/* State example */}
-      <Counter />
+      {/* <Greeting />
+      <Counter /> */}
       <Profile />
       <Toggle />
     </div>
