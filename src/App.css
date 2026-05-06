@@ -1,49 +1,80 @@
-/* App.css */
-
-/* Reset a bit */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Page styling */
+/* Page */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #80a5ca;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b0f19;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-/* Center app */
-.app-container {
+/* Card */
+.form-card {
+  background: #111827;
+  padding: 22px 28px;
+  width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  gap: 20px;
+  gap: 10px; 
 }
 
-/* Card style */
-.card {
-  background: white;
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* Title */
+.form-card h2 {
+  color: #f9fafb;
   text-align: center;
-  color: black;
+  margin: 0 0 5px 0;
+  font-size: 18px;
 }
 
-/* Button styling */
-.button {
-  margin-top: 10px;
-  padding: 8px 16px;
+/* Group inputs */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* tight spacing between label + input */
+}
+
+/* Inputs */
+.form-card input {
+  padding: 7px 10px;
   border: none;
-  border-radius: 6px;
-  background-color: #2563eb;
+  border-radius: 5px;
+  background: #1f2937;
+  color: #f9fafb;
+  font-size: 13px;
+}
+
+/* Placeholder */
+.form-card input::placeholder {
+  color: #6b7280;
+}
+
+/* Button */
+.form-card button {
+  margin-top: 5px;
+  padding: 8px;
+  background: #6366f1;
+  border: none;
+  border-radius: 5px;
   color: white;
   cursor: pointer;
+  font-size: 14px;
 }
 
-.button:hover {
-  background-color: #1e4ed8;
+.form-card button:hover {
+  background: #4f46e5;
+}
+
+/* Toggle text */
+.toggle-text {
+  text-align: center;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.toggle-text span {
+  color: #818cf8;
+  cursor: pointer;
 }
