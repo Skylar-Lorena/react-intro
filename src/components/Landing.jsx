@@ -1,6 +1,6 @@
  //import "link" from react-router-dom instead of using <a> tags 
   //this allows the app to change the URL without refreshing the entire page
-  import {Link, link}from "react-router-dom"
+  import {Link}from "react-router-dom"
 function Landing(){
     return(
         <div>

@@ -1,22 +1,23 @@
 // App.jsx
 
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Landing from "./components/Landing";
+import Login from "./components/LoginForm";
+import Signup from "./components/SignupForm";
 import Profile from "./components/Profile";
-import Toggle from "./components/Toggle";
-import Greeting from "./components/Greeting";
-import Counter from "./components/Counter";
-
-
-// Root component that combines everything
+//BrowserPouter is the backborne of of all URL's
+//route is the specific path for the  url
+//routes is a container that groups multiple <Route> definitions
 function App() {
   return (
-    <div className="app-container">
-      {/* Props example */}
-      {/* <Greeting />
-      <Counter /> */}
-      <Profile />
-      <Toggle />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
