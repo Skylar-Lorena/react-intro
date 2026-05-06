@@ -6,7 +6,7 @@ function Profile(){
 
   return (
     <div style={{backgroundColor: 'white',padding: '10px', margin: '10px', borderRadius: '50px'}}>
-        <Greeting/>
+        <Greeting name="John Doe"/>
         <Counter/>
         <h3>3. Profile Component</h3>
         <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" style={{ width: '50px', height: '50px', borderRadius: '50%',  }}>
